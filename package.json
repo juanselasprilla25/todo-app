@@ -10,10 +10,13 @@
     "@types/node": "^16.18.2",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "bootstrap": "^5.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.6.4",
     "typescript": "^4.8.4",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
