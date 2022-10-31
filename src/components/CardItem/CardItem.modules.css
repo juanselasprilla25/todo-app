@@ -1,0 +1,29 @@
+#todo {
+  background: #ec6464;
+}
+
+#doing {
+  background: #ebeb1f;
+}
+
+#done {
+  background: #2fe15f;
+}
+
+.card {
+  min-width: 10rem;
+  width: max-content;
+}
+
+.card li {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+}
+
+.iconComponent {
+  padding: 10px;
+}

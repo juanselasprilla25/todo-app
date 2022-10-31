@@ -1,6 +1,5 @@
 * {
   text-align: center;
-  background: #6fabab;
 }
 
 body {
@@ -10,9 +9,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #6fabab;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
 }
