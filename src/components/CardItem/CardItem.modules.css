@@ -3,7 +3,11 @@
 }
 
 #doing {
-  background: #ebeb1f;
+  background: #1fcceb;
+}
+
+#review {
+  background: #deeb1f;
 }
 
 #done {
@@ -11,19 +15,32 @@
 }
 
 .card {
-  min-width: 10rem;
+  padding: 15px;
+  min-width: 8rem;
   width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.card li {
+.card p {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   justify-content: flex-end;
   align-items: center;
   text-align: left;
+  margin: 10px;
+  /*This has to be !important to overwrite BOOTSTRAP inheretance*/
+  border-radius: 15px !important;
+
+  box-shadow: 3px 3px 19px -1px rgba(0, 0, 0, 0.69);
 }
 
-.iconComponent {
+.icon-component {
   padding: 10px;
+}
+
+.card-header {
+  font-size: 1.8rem;
+  background-color: unset;
 }

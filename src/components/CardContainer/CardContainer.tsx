@@ -1,24 +1,28 @@
 import { CardContainerProps } from "../../interfaces/interface";
 import { CardItem } from "../CardItem/CardItem"
-
-const { v4: uuidv4 } = require('uuid');
-
+import { FaPlusCircle } from 'react-icons/fa';
 
 export const CardContainer = (props: CardContainerProps) => {
 
+
     const { cardTitle, completedState, tasks } = props.cardBody
+    console.log('data', tasks);
     return (
-        <article className="card">
-            <div className="card-header">
+        <section className="card">
+            <header className="card-header">
                 {cardTitle}
-            </div>
-            <ul className="list-group list-group-flush">
+            </header>
+            <article className="list-group list-group-flush">
                 {
-                    Object.values(tasks).map((data): any => {
-                        return <CardItem key={uuidv4()} completedState={completedState} task={data as string} />
+                    tasks.map(({ taskId, taskName }): any => {
+                        return <CardItem key={taskId} completedState={completedState} task={taskName} />
                     })
                 }
-            </ul>
-        </article>
+            </article>
+            <article className="add-card-items">
+                Agregar nueva tarea
+                <FaPlusCircle />
+            </article>
+        </section>
     )
 }
